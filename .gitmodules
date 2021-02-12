@@ -1,0 +1,3 @@
+[submodule "arctic-project"]
+	path = arctic-project
+	url = https://github.com/an-gold/arctic-project.git
