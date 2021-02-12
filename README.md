@@ -1,5 +1,5 @@
 # arctic-project
-A website which informs about the impacts of climate change on the arctic.
+A website that informs about the impacts of climate change on the arctic.
 
 This project evolves out of a student project in the field of digital media. 
 The website has an animation that should get the user's attention. Push the button to get to the
