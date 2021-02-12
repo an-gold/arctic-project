@@ -1,0 +1,893 @@
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+html,
+body {
+    background-color: #001741;
+    background-image: url(./img/backgroundimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+    font-size: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+/* animation settings for homepage*/
+
+.iceanimation {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* background img */
+
+img {
+    width: 100%;
+    z-index: 2;
+}
+
+
+/*change the layout of the navigation bar for all the screens 
+that have a width less or equal than 500px*/
+
+@media only screen and (max-width: 500px) {
+    /*shows elements in a column*/
+    ul {
+        flex-direction: column;
+    }
+    /* deletes margin on top or bottom of the a tag*/
+    a {
+        margin: 0;
+        display: block;
+    }
+    /* makes sure that the a tag will take the entire screen*/
+}
+
+
+/*style the polar bear text*/
+
+.textpolarbear {
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0.5 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    color: #FFFFFF;
+    text-align: left;
+    padding: 40px;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+/*button animation*/
+
+.shmashtheice {
+    position: absolute;
+    transition-duration: 0.4s;
+    top: 20vh;
+    left: 80%;
+    width: 160px;
+    height: 50px;
+    font-family: "Quicksand", sans-serif;
+    font-size: large;
+    background: #9482FF00 0% 0% no-repeat padding-box;
+    border: 3px solid #1AAED8;
+    border-radius: 4px;
+    opacity: 1;
+    color: white;
+}
+
+.shmashtheice2 button {
+    position: absolute;
+    transition-duration: 0.4s;
+    top: 21vh;
+    left: 80%;
+    width: 160px;
+    height: 50px;
+    font-family: "Quicksand", sans-serif;
+    font-size: large;
+    background: #9482FF00 0% 0% no-repeat padding-box;
+    border: 3px solid #1AAED8;
+    border-radius: 4px;
+    opacity: 1;
+    color: white;
+}
+
+
+/*button to get to the polar bear animation site*/
+
+.learnmore button {
+    position: absolute;
+    transition-duration: 0.4s;
+    top: 65%;
+    left: 45%;
+    width: 160px;
+    height: 50px;
+    font-family: "Quicksand", sans-serif;
+    font-size: large;
+    background: #021a2e;
+    border: 3px solid #dbf5fc;
+    border-radius: 4px;
+    opacity: 0.0;
+    color: white;
+    animation: fadeIn ease 35s;
+    -webkit-animation: fadeIn ease 35s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* styles the button to shmash the ice*/
+
+button:hover {
+    background-color: #1AAED8;
+    color: white;
+    cursor: pointer;
+}
+
+.learnmore:hover {
+    background-color: #1AAED8;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* styles the all of the polar bear elements*/
+
+:root {
+    --margin-left: -40vw;
+    --margin-top: -15vh;
+}
+
+.element {
+    position: absolute;
+    transition: top 2000ms, left 1500ms, transform 2500ms;
+}
+
+#element-0 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-1 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-2 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-3 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-4 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-5 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-6 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-7 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-8 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-9 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-10 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-11 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-12 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-13 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-14 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-15 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-16 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-17 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-18 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-19 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-20 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-21 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+#element-22 {
+    background-color: none;
+    transform: rotate(200grad);
+}
+
+
+/* positions all of the polar bear elements */
+
+.position-0 {
+    top: calc(561px + var(--margin-top)) !important;
+    left: calc(921px + var(--margin-left)) !important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-1 {
+    top: calc(563px + var(--margin-top)) !important;
+    left: calc(931px + var(--margin-left)) !important;
+    position: absolute;
+    display: block;
+    transform: rotate(0grad) !important;
+}
+
+.position-2 {
+    top: calc(511px + var(--margin-top)) !important;
+    left: calc(923px + var(--margin-left)) !important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-3 {
+    top: calc(456px + var(--margin-top)) !important;
+    left: calc(967px + var(--margin-left)) !important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-4 {
+    top: calc(461px + var(--margin-top)) !important;
+    left: calc(1041px + var(--margin-left)) !important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-5 {
+    top: calc(432px + var(--margin-top))!important;
+    left: calc(1037px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-6 {
+    top: calc(433px + var(--margin-top))!important;
+    left: calc(1062px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-7 {
+    top: calc( 438px + var(--margin-top))!important;
+    left: calc(1075px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-8 {
+    top: calc(534px + var(--margin-top))!important;
+    left: calc(1098px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-9 {
+    top: calc(719px + var(--margin-top))!important;
+    left: calc(1035px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-10 {
+    top: calc(397px + var(--margin-top))!important;
+    left: calc(1077px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-11 {
+    top: calc(357px + var(--margin-top))!important;
+    left: calc(1084px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-12 {
+    top: calc(357px + var(--margin-top))!important;
+    left: calc(1196px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-13 {
+    top: calc(360px + var(--margin-top))!important;
+    left: calc(1221px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-14 {
+    top: calc(374px + var(--margin-top))!important;
+    left: calc(1318px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-15 {
+    top: calc(548px + var(--margin-top))!important;
+    left: calc(1293px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-16 {
+    top: calc(600px + var(--margin-top))!important;
+    left: calc(1260px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-17 {
+    top: calc(724px + var(--margin-top))!important;
+    left: calc(1234px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-18 {
+    top: calc(371px + var(--margin-top))!important;
+    left: calc(1474px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-19 {
+    top: calc(602px + var(--margin-top))!important;
+    left: calc(1393px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-20 {
+    top: calc(718px + var(--margin-top))!important;
+    left: calc(1406px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-21 {
+    top: calc(480px + var(--margin-top))!important;
+    left: calc(1473px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+.position-22 {
+    top: calc(723px + var(--margin-top))!important;
+    left: calc(1504px + var(--margin-left))!important;
+    transform: rotate(0grad) !important;
+    position: absolute;
+    display: block;
+}
+
+
+/* style the video on arctic */
+
+
+/* Style the video: 100% width and height to cover the entire window */
+
+#myVideo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: auto !important;
+}
+
+
+/*-- Inspiration taken from abdo steif -->
+/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
+
+/* Navbar section */
+
+.nav {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    background-color: ;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav div.logo a:hover {
+    color: #ffffff;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    font-size: 2.4rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #1AAED8;
+}
+
+
+/* Home section */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
+    background-position: center top;
+    background-size: cover;
+    z-index: 1;
+}
+
+.navTrigger {
+    display: none;
+}
+
+.nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 3rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+
+/* Animation */
+
+
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.affix {
+    padding: 0;
+    background-color: #111;
+}
+
+.myH2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.myP {
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 20px;
+}
+
+@media all and (max-width:700px) {
+    .myP {
+        padding: 2%;
+    }
+}
+
+
+/* About-Page */
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.text {
+    position: absolute;
+    top: 25%;
+    left: 14%;
+    font-size: 140%;
+    width: 60%;
+}

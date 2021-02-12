@@ -1,0 +1,426 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>move</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+
+        <!-- below starts the navbar-->
+    </head>
+
+    <body>
+        <div class="container">
+
+            <nav class="nav">
+                <div class="container">
+                    <div class="logo">
+                        <a href="./home.html"><img src="./img/ArcticLogo.png" alt="logo of the arctic"></a>
+                    </div>
+                    <div id="mainListDiv" class="main_list">
+                        <ul class="navlinks">
+                            <li><a href="./home.html">Home</a></li>
+                            <li><a href="./thearctic.html">The Arctic</a></li>
+                            <li><a href="./about.html">The Project</a></li>
+                            <li><a href="./contacts.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+                </div>
+            </nav>
+        </div>
+        <!--THIS IS A TRY FOR SCROLL SNAP FUNCTION-->
+        <div class="container">
+            <section class="child">
+
+                <img src="./img/bakckgroundimagearctic@2x.svg" alt="icy background frozen">
+
+                <!--music for the polar bear elements-->
+                <audio id="icesound" preload="auto">
+            <source src="./music/icesound.mp3" type="audio/mpeg">
+            <source src="./music/icesound.ogg" type="audio/ogg">
+              Your browser isn't invited for super fun audio time. Please try another browser.
+        </audio>
+
+                <!--background music loops in the background-->
+                <audio loop autoplay id="backgroundmusic"> 
+          <source src= 
+          "./music/background-icesound-edited.mp3" 
+          type="audio/mp3"> 
+          Your browser isn't invited for super fun audio time. Please try another browser.
+      </audio>
+
+                <!--button to push the shapes-->
+                <button class="shmashtheice" onclick="randomizeShapes()">Try Again!</button>
+                <!--here starts the svg polar bear elements-->
+                <div id="element-0" class="element" alt="ice shells forming a polar bear if mouse hovers over the elements"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29.965" height="25.557" viewBox="0 0 29.965 25.557">
+            <defs>
+              <filter id="_0" x="0" y="0" width="29.965" height="25.557" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_0)">
+              <path id="_0-2" data-name="0" d="M325.746,527.78l5.54,10.557s9.93-10.035,9.405-9.93S325.746,527.78,325.746,527.78Z" transform="translate(-321.25 -522.28)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-1" class="element">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75.986" height="54.773" viewBox="0 0 75.986 54.773">
+                <defs>
+                    <filter id="_1" x="0" y="0" width="75.986" height="54.773" filterUnits="userSpaceOnUse">
+                        <feOffset dx="3" dy="2" input="SourceAlpha" />
+                        <feGaussianBlur stdDeviation="2.5" result="blur" />
+                        <feFlood flood-color="#133a9b" flood-opacity="0.459" />
+                        <feComposite operator="in" in2="blur" />
+                        <feComposite in="SourceGraphic" />
+                    </filter>
+                </defs>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_1)">
+                    <path id="_1-2" data-name="1" d="M330.505,541.974l14.142,26.516,46.844-22.1-5.3-13.258-45.077-4.419Z" transform="translate(-326.01 -523.22)" fill="#fff" opacity="0.2" />
+                </g>
+                </svg>
+                </div>
+                <div id="element-2" class="element">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75.986" height="61.844" viewBox="0 0 75.986 61.844">
+                <defs>
+                    <filter id="_2" x="0" y="0" width="75.986" height="61.844" filterUnits="userSpaceOnUse">
+                        <feOffset dx="3" dy="2" input="SourceAlpha" />
+                        <feGaussianBlur stdDeviation="2.5" result="blur" />
+                        <feFlood flood-color="#133a9b" flood-opacity="0.459" />
+                        <feComposite operator="in" in2="blur" />
+                        <feComposite in="SourceGraphic" />
+                    </filter>
+                </defs>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_2)">
+                    <path id="_2-2" data-name="2" d="M326.789,546.779l44.193-42.425L387.775,551.2Z" transform="translate(-322.29 -498.85)" fill="#fff" opacity="0.2" />
+                </g>
+                </svg>
+                </div>
+                <div id="element-3" class="element">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="139.688" height="146.24" viewBox="0 0 139.688 146.24">
+                <defs>
+                    <filter id="_3" x="0" y="0" width="139.688" height="146.24" filterUnits="userSpaceOnUse">
+                        <feOffset dx="3" dy="2" input="SourceAlpha" />
+                        <feGaussianBlur stdDeviation="2.5" result="blur" />
+                        <feFlood flood-color="#133a9b" flood-opacity="0.459" />
+                        <feComposite operator="in" in2="blur" />
+                        <feComposite in="SourceGraphic" />
+                    </filter>
+                </defs>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_3)">
+                    <path id="_3-2" data-name="3" d="M347.2,513.563l34.4,96.639,90.291-16.789-13.513-91.725-21.7,13.922-24.364-36.649Z" transform="translate(-342.7 -473.46)" fill="#fff" opacity="0.2" />
+                </g>
+                </svg>
+                </div>
+                <div id="element-4" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.167" height="42.64" viewBox="0 0 48.167 42.64">
+            <defs>
+              <filter id="_4" x="0" y="0" width="48.167" height="42.64" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_4)">
+              <path id="_4-2" data-name="4" d="M381.633,480.97c.612.614,16.379,27.64,16.379,27.64L414.8,496.12Z" transform="translate(-377.13 -475.47)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-5" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51.649" height="55.13" viewBox="0 0 51.649 55.13">
+            <defs>
+              <filter id="_5" x="0" y="0" width="51.649" height="55.13" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_5)">
+              <path id="_5-2" data-name="5" d="M383.583,467.387,380.1,490.114l36.649,17.4-1.024-26Z" transform="translate(-375.6 -461.89)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-6" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.985" height="23.599" viewBox="0 0 22.985 23.599">
+            <defs>
+              <filter id="_6" x="0" y="0" width="22.985" height="23.599" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_6)">
+              <path id="_6-2" data-name="6" d="M399.361,468.152l-7.78,3.276,7.985,5.323Z" transform="translate(-387.08 -462.65)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-7" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93.826" height="164.257" viewBox="0 0 93.826 164.257">
+            <defs>
+              <filter id="_7" x="0" y="0" width="93.826" height="164.257" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_7)">
+              <path id="_7-2" data-name="7" d="M397.989,470.735,419.9,603.613l37.468,16.38,19.45-55.485Z" transform="translate(-393.49 -465.24)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-8" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="202.145" height="248.848" viewBox="0 0 202.145 248.848">
+            <defs>
+              <filter id="_8" x="0" y="0" width="202.145" height="248.848" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_8)">
+              <path id="_8-2" data-name="8" d="M468.1,515.206c-.338,1.015-17.259,55.839-17.259,55.839v55.5l-42.3,71.069,25.044,51.44L565.9,646.174l29.781-67.006Z" transform="translate(-404.04 -509.71)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-9" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96.897" height="64.748" viewBox="0 0 96.897 64.748">
+            <defs>
+              <filter id="_9" x="0" y="0" width="96.897" height="64.748" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_9)">
+              <path id="_9-2" data-name="9" d="M379.128,650.6l56.516-49.071,25.381,49.748Z" transform="translate(-374.63 -596.03)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-10" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="248.171" height="211.96" viewBox="0 0 248.171 211.96">
+            <defs>
+              <filter id="_10" x="0" y="0" width="248.171" height="211.96" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_10)">
+              <path id="_10-2" data-name="10" d="M398.575,486.212l80.205,97.465,129.614,64.3,23.351-50.086L537.326,451.016Z" transform="translate(-394.07 -445.52)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-11" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="143.937" height="80.663" viewBox="0 0 143.937 80.663">
+            <defs>
+              <filter id="_11" x="0" y="0" width="143.937" height="80.663" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_11)">
+              <path id="_11-2" data-name="11" d="M506.309,432.676c-4.063,1.691-104.912,64.977-104.571,65.653s128.936-32.15,128.936-32.15Z" transform="translate(-397.24 -427.18)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-12" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93.852" height="45.458" viewBox="0 0 93.852 45.458">
+            <defs>
+              <filter id="_12" x="0" y="0" width="93.852" height="45.458" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_12)">
+              <path id="_12-2" data-name="12" d="M454.385,432.676l21.659,30.458,57.193-28.766Z" transform="translate(-449.89 -427.18)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-13" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="324.654" height="194.362" viewBox="0 0 324.654 194.362">
+            <defs>
+              <filter id="_13" x="0" y="0" width="324.654" height="194.362" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_13)">
+              <path id="_13-2" data-name="13" d="M466.085,468.459c.338,1.017,92.726,144.845,92.726,144.845L775.739,441.386l-247.385-7.445Z" transform="translate(-461.59 -428.44)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+
+                <div id="element-14" class="element">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="228.882" height="252.236" viewBox="0 0 228.882 252.236">
+            <defs>
+              <filter id="_14" x="0" y="0" width="228.882" height="252.236" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_14)">
+              <path id="_14-2" data-name="14" d="M511.144,610.151,725.026,440.265s-64.3,238.247-64.3,237.232-80.544-13.2-80.544-13.2Z" transform="translate(-506.64 -434.77)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-15" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101.634" height="63.732" viewBox="0 0 101.634 63.732">
+            <defs>
+              <filter id="_15" x="0" y="0" width="101.634" height="63.732" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_15)">
+              <path id="_15-2" data-name="15" d="M520.742,521.688c-.338,1.017-20.981,47.041-20.981,47.041l86.634,1.691Z" transform="translate(-495.26 -516.19)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-16" class="element">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118.896" height="161.536" viewBox="0 0 118.896 161.536">
+            <defs>
+              <filter id="_16" x="0" y="0" width="118.896" height="161.536" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_16)">
+              <path id="_16-2" data-name="16" d="M514.229,546.194s-30.459,63.624-30.119,64.639S495.616,666,495.616,666L535.21,692.73,588,547.887Z" transform="translate(-479.61 -540.69)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-17" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85.391" height="39.705" viewBox="0 0 85.391 39.705">
+            <defs>
+              <filter id="_17" x="0" y="0" width="85.391" height="39.705" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_17)">
+              <path id="_17-2" data-name="17" d="M472.093,627.93,508.3,603.9l34.18,24.7Z" transform="translate(-467.59 -598.4)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-18" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="169.996" height="249.186" viewBox="0 0 169.996 249.186">
+            <defs>
+              <filter id="_18" x="0" y="0" width="169.996" height="249.186" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_18)">
+              <path id="_18-2" data-name="18" d="M648.488,439.158l-64.3,234.186,155-130.63Z" transform="translate(-579.69 -433.66)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-19" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="142.588" height="155.444" viewBox="0 0 142.588 155.444">
+            <defs>
+              <filter id="_19" x="0" y="0" width="142.588" height="155.444" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_19)">
+              <path id="_19-2" data-name="19" d="M546.4,547.143c-.338,1.015,41.626,111.34,41.626,111.34l51.44,29.1,34.52-104.233-55.841-21.66Z" transform="translate(-541.9 -541.64)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-20" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88.098" height="43.089" viewBox="0 0 88.098 43.089">
+            <defs>
+              <filter id="_20" x="0" y="0" width="88.098" height="43.089" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_20)">
+              <path id="_20-2" data-name="20" d="M552.251,629.3l28.766-28.089,44.333,25.72Z" transform="translate(-547.75 -595.71)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-21" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="195.377" height="302.32" viewBox="0 0 195.377 302.32">
+            <defs>
+              <filter id="_21" x="0" y="0" width="195.377" height="302.32" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_21)">
+              <path id="_21-2" data-name="21" d="M583.714,627.986,633.8,645.244l73.438,131.984s56.854-77.16,56.854-78.175-21.657-209.145-21.657-209.145Z" transform="translate(-579.21 -484.41)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+                <div id="element-22" class="element"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103.327" height="63.056" viewBox="0 0 103.327 63.056">
+            <defs>
+              <filter id="_22" x="0" y="0" width="103.327" height="63.056" filterUnits="userSpaceOnUse">
+                <feOffset dx="3" dy="2" input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feFlood flood-color="#133a9b" flood-opacity="0.459"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_22)">
+              <path id="_22-2" data-name="22" d="M597.943,650.648c1.017-1.691,54.825-47.378,54.825-47.378l33.5,48.056Z" transform="translate(-593.44 -597.77)" fill="#fff" opacity="0.2"/>
+            </g>
+          </svg>
+                </div>
+            </section>
+        </div>
+
+
+
+        <script type="text/javascript" src="./example.js"></script>
+    </body>
+
+    </html>
