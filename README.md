@@ -1,6 +1,6 @@
 # arctic-project
 A website that informs about the impacts of climate change on the arctic.
-arctic-project
+
 
 
 This project evolves out of a student project in the field of digital media. 
