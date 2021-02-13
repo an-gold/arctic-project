@@ -28,7 +28,6 @@ body {
 
 img {
     width: 100%;
-    z-index: 2;
 }
 
 
@@ -521,7 +520,6 @@ button:hover {
     position: fixed;
     line-height: 65px;
     text-align: center;
-    background-color: ;
 }
 
 .nav div.logo {
@@ -582,7 +580,6 @@ button:hover {
     background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
     background-position: center top;
     background-size: cover;
-    z-index: 1;
 }
 
 .navTrigger {
